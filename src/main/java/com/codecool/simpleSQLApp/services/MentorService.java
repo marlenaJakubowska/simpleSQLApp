@@ -1,0 +1,4 @@
+package com.codecool.simpleSQLApp.services;
+
+public class MentorService {
+}
