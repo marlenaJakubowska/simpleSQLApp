@@ -1,19 +1,11 @@
 package com.codecool.simpleSQLApp;
 
-import com.codecool.simpleSQLApp.dao.PGConnector;
+import com.codecool.simpleSQLApp.controllers.Controller;
 
-import java.sql.SQLException;
-
-/**
- * Hello world!
- *
- */
 public class App 
 {
-    public static void main( String[] args ) throws SQLException {
-        PGConnector connector = new PGConnector();
+    public static void main( String[] args ) {
+        Controller controller = new Controller();
     }
-
-
 
 }
