@@ -14,7 +14,7 @@ public class PGConnector {
     protected Connection connection;
     protected Statement statement;
 
-    public void connect() {
+    public Connection connect() {
         connection = null;
         try {
             Class.forName("org.postgresql.Driver");
@@ -25,5 +25,6 @@ public class PGConnector {
             e.printStackTrace();
             System.out.println("Not connected");
         }
+        return connection;
     }
 }
